@@ -58,7 +58,7 @@ export default function PortfolioPage() {
                 </div>
                 <h3>Concert App</h3>
                 <p className="lead mb-0">
-                  This was my second Project. For this we created a matchup concert app where 
+                  This was my second Project. For this we created a matchup concert app where
                   we nuilt a full stack app. Take a look! <a href="https://concertapp.onrender.com/login">Go to my deployed App</a>
 
                   <a href="https://github.com/Gabrielasiu/concertApp">Go to my Concert App git repository</a>
@@ -73,7 +73,7 @@ export default function PortfolioPage() {
                 </div>
                 <h3>Weather App</h3>
                 <p className="lead mb-0">
-                   Take a look! <a href="https://github.com/Gabrielasiu/weather">Go to my deployed App</a>
+                  Take a look! <a href="https://github.com/Gabrielasiu/weather">Go to my deployed App</a>
 
                   <a href="https://gabrielasiu.github.io/weather/"> Weather app git repository</a>
 
@@ -87,66 +87,20 @@ export default function PortfolioPage() {
                 </div>
                 <h3> Personal Blog App</h3>
                 <p className="lead mb-0">
-                   Take a look! <a href="https://gabrielasiu.github.io/My-Personal-Blog/">Go to my deployed App</a>
+                  Take a look! <a href="https://gabrielasiu.github.io/My-Personal-Blog/">Go to my deployed App</a>
 
                   <a href="https://github.com/Gabrielasiu/My-Personal-Blog"> Personal blog git repository</a>
 
                 </p>
               </div>
             </div>
-            {/* <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-terminal m-auto text-primary" />
-                  </div>
-                  <h3>Projects</h3>
-                  <p className="lead mb-0">
-                    Projects
-                    Project Name
-                    [Brief Description]
-  
-                    Developed using JavaScript, Node.js, Express, and React
-                    Implemented [specific feature or functionality]
-                    Utilized SQL/NoSQL databases to manage data
-                    Followed MVC architecture and employed ORM for database interactions
-                    
-                    Project Name
-                    [Brief Description]
-  
-                    Created a Progressive Web App (PWA) to [brief description of functionality]
-                    Integrated external APIs to [describe integration]
-                    Focused on responsive design and user experience
-                    ols: [Include any relevant tools, e.g., Git, Docker]
-  
-                  </p>
-                </div>
-              </div> */}
+
 
           </div>
         </div>
       </section>
 
-      {/* <div className="container pt-4">
-        <p>
-          Projects
-          Project Name
-          [Brief Description]
 
-          Developed using JavaScript, Node.js, Express, and React
-          Implemented [specific feature or functionality]
-          Utilized SQL/NoSQL databases to manage data
-          Followed MVC architecture and employed ORM for database interactions
-          Project Name
-          [Brief Description]
-
-          Created a Progressive Web App (PWA) to [brief description of functionality]
-          Integrated external APIs to [describe integration]
-          Focused on responsive design and user experience
-
-        </p>
-
-
-      </div> */}
     </div>
   );
 

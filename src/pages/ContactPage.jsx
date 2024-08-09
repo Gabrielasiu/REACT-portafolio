@@ -1,127 +1,90 @@
 // contact
-export default function ContactPage (){
-    return (
-        <div className="container pt-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-            impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-            architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-            mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-            nostrum temporibus ad omnis nam rerum eligendi.
-          </p>
-          <section className="features-icons bg-light text-center m-4">
-            <div className="container">
-              <div className="row p-2">
-                <div className="col-lg-4">
-                  <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div className="features-icons-icon d-flex">
-                      <i className="bi-window m-auto text-primary" />
-                    </div>
-                    <h3>Fully Responsive</h3>
-                    <p className="lead mb-0">
-                      This theme will look great on any device, no matter the size!
-                    </p>
-                  </div>
-                </div>
-                <div className="col-lg-4">
-                  <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div className="features-icons-icon d-flex">
-                      <i className="bi-layers m-auto text-primary" />
-                    </div>
-                    <h3>Bootstrap 5 Ready</h3>
-                    <p className="lead mb-0">
-                      Featuring the latest build of the new Bootstrap 5 framework!
-                    </p>
-                  </div>
-                </div>
-                <div className="col-lg-4">
-                  <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                    <div className="features-icons-icon d-flex">
-                      <i className="bi-terminal m-auto text-primary" />
-                    </div>
-                    <h3>Easy to Use</h3>
-                    <p className="lead mb-0">
-                      Ready to use with your own content, or customize the source
-                      files!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-            impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-            architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-            mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-            nostrum temporibus ad omnis nam rerum eligendi.
-          </p>
-          return (
+// class ContactForm extends ContactPage {
+//   constructor(props) {
+//     super(props);
+//     this.state = {value: ''};
+
+//     this.handleChange = this.handleChange.bind(this);
+//     this.handleSubmit = this.handleSubmit.bind(this);
+//   }
+
+//   handleChange(event) {
+//     this.setState({value: event.target.value});
+//   }
+
+//   handleSubmit(event) {
+//     alert('A name was submitted: ' + this.state.value);
+//     event.preventDefault();
+//   }
+
+//   render() {
+//     return (
+//       <form onSubmit={this.handleSubmit}>
+//         <label>
+//           Name:
+//           <input type="text" value={this.state.value} onChange={this.handleChange} />
+//         </label>
+//         <input type="submit" value="Submit" />
+//       </form>
+//     );
+//   }
+// }
+export default function ContactPage() {
+  return (
     <div className="container pt-4">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-        impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-        architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-        mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-        nostrum temporibus ad omnis nam rerum eligendi.
-      </p>
+      <h3>Contact me!</h3>
       <section className="features-icons bg-light text-center m-4">
         <div className="container">
           <div className="row p-2">
-            <div className="col-lg-4">
-              <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <div className="features-icons-icon d-flex">
-                  <i className="bi-window m-auto text-primary" />
-                </div>
-                <h3>Fully Responsive</h3>
-                <p className="lead mb-0">
-                  This theme will look great on any device, no matter the size!
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <div className="features-icons-icon d-flex">
-                  <i className="bi-layers m-auto text-primary" />
-                </div>
-                <h3>Bootstrap 5 Ready</h3>
-                <p className="lead mb-0">
-                  Featuring the latest build of the new Bootstrap 5 framework!
-                </p>
-              </div>
-            </div>
+
+
             <div className="col-lg-4">
               <div className="features-icons-item mx-auto mb-0 mb-lg-3">
                 <div className="features-icons-icon d-flex">
                   <i className="bi-terminal m-auto text-primary" />
                 </div>
-                <h3>Easy to Use</h3>
-                <p className="lead mb-0">
-                  Ready to use with your own content, or customize the source
-                  files!
-                </p>
+                <form>
+                  <label>
+                    Name:
+                    <input type="text" name="name" />
+                  </label>
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+              <div className="features-icons-item mx-auto mb-0 mb-lg-3">
+                <div className="features-icons-icon d-flex">
+                  <i className="bi-terminal m-auto text-primary" />
+                </div>
+                <form>
+                  <label>
+                    Email:
+                    <input type="text" name="name" />
+                  </label>
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+              <div className="features-icons-item mx-auto mb-0 mb-lg-3">
+                <div className="features-icons-icon d-flex">
+                  <i className="bi-terminal m-auto text-primary" />
+                </div>
+                <form>
+                  <label>
+                    Mesagge:
+                    <input type="text" name="name" />
+                  </label>
+                  <input type="submit" value="Submit" />
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-        impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-        architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-        mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-        nostrum temporibus ad omnis nam rerum eligendi.
-      </p>
+
+
+      <div className="container pt-4">
+
+      </div>
     </div>
-  );  </div>
-      );
+  );
 
 }
