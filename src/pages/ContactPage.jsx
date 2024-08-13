@@ -1,89 +1,65 @@
-// contact
-// class ContactForm extends ContactPage {
-//   constructor(props) {
-//     super(props);
-//     this.state = {value: ''};
+import './styles.css';
+import React, { useState } from 'react';
 
-//     this.handleChange = this.handleChange.bind(this);
-//     this.handleSubmit = this.handleSubmit.bind(this);
-//   }
 
-//   handleChange(event) {
-//     this.setState({value: event.target.value});
-//   }
-
-//   handleSubmit(event) {
-//     alert('A name was submitted: ' + this.state.value);
-//     event.preventDefault();
-//   }
-
-//   render() {
-//     return (
-//       <form onSubmit={this.handleSubmit}>
-//         <label>
-//           Name:
-//           <input type="text" value={this.state.value} onChange={this.handleChange} />
-//         </label>
-//         <input type="submit" value="Submit" />
-//       </form>
-//     );
-//   }
-// }
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log('Form Data:', formData);
+  };
   return (
-    <div className="container pt-4">
-      <h3>Contact me!</h3>
-      <section className="features-icons bg-light text-center m-4">
-        <div className="container">
-          <div className="row p-2">
 
-
-            <div className="col-lg-4">
-              <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div className="features-icons-icon d-flex">
-                  <i className="bi-terminal m-auto text-primary" />
-                </div>
-                <form>
-                  <label>
-                    Name:
-                    <input type="text" name="name" />
-                  </label>
-                  <input type="submit" value="Submit" />
-                </form>
-              </div>
-              <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div className="features-icons-icon d-flex">
-                  <i className="bi-terminal m-auto text-primary" />
-                </div>
-                <form>
-                  <label>
-                    Email:
-                    <input type="text" name="name" />
-                  </label>
-                  <input type="submit" value="Submit" />
-                </form>
-              </div>
-              <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div className="features-icons-icon d-flex">
-                  <i className="bi-terminal m-auto text-primary" />
-                </div>
-                <form>
-                  <label>
-                    Mesagge:
-                    <input type="text" name="name" />
-                  </label>
-                  <input type="submit" value="Submit" />
-                </form>
-              </div>
-            </div>
-          </div>
+    <div className="contact-container">
+      <h2>Contact Me!</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
         </div>
-      </section>
-
-
-      <div className="container pt-4">
-
-      </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <button type="submit">Send</button>
+      </form>
     </div>
   );
 
